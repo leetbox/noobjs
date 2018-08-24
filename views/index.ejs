@@ -10,7 +10,8 @@
     <div>
       <h1><%= add %></h1>
       <form method="POST" action="">
-        <input type="text" name="username">
+        Username: <input type="text" name="username"><br>
+        Email: <input type="text" name="email"><br>
         <input type="submit" value="Add">
       </form>
     </div>
@@ -18,7 +19,7 @@
       <h1><%= list %></h1>
       <ul>
         <% for(var i=0; i<users.length; i++) {%>
-          <li><a href="user/<%= users[i].username %>"><%= users[i].username %></a></li>
+          <li><a href="user/<%= users[i].username %>"><%= users[i].username + " (" + users[i].email + ")" %></a></li>
           <% } %>
       </ul>
     </div>

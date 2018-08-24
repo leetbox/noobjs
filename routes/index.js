@@ -18,6 +18,7 @@ router.get('/', async function (req, res) {
 router.post('/', function (req, res) {
   var user = new User();
   user.username = req.body.username;
+  user.email = req.body.email;
   user.save(function (err) {
     if (err) console.log(err);
     else (console.log('user ' + req.body.username + ' added'))

@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= user[0].username %>
+    <h1><%= user[0].username + " (" + user[0].email + ")" %>
     <form method="POST" action="">
       <input type="text" value="<%= user[0].username %>" name="username">
       <input type="submit" value="Update"><input type="button" onclick="history.back();" value="Back">
