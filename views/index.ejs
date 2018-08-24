@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= welcome %></p>
+    <div>
+      <h1><%= add %></h1>
+      <form method="POST" action="">
+        <input type="text" name="username">
+        <input type="submit" value="Add">
+      </form>
+    </div>
+    <div>
+      <h1><%= list %></h1>
+      <ul>
+        <% for(var i=0; i<users.length; i++) {%>
+          <li><a href="user/<%= users[i].username %>"><%= users[i].username %></a></li>
+          <% } %>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= user[0].username %>
+    <form method="POST" action="">
+      <input type="text" value="<%= user[0].username %>" name="username">
+      <input type="submit" value="Update"><input type="button" onclick="history.back();" value="Back">
+    </form>
+  </body>
+</html>
